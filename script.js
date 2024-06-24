@@ -9,7 +9,21 @@ const countDown = function () {
     // console.log(count)
     count--;
     if (count >= 0) {
-        setTimeout(countDown, 1000);
+        setTimeout(function () {
+            setTimeout(function () {
+                setTimeout(function () {
+                    setTimeout(function () {
+                        setTimeout(function () {
+                            setTimeout(function () {
+                                setTimeout(function () {
+                                    countDown();
+                                }, 1000)
+                            }, 1000)
+                        }, 1000)
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
     } else {
         mainDiv.textContent = 'Happy Independence Day';
     }
